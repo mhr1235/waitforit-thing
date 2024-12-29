@@ -1,0 +1,327 @@
+:root {
+  --rotate: 0deg;
+  --color: white;
+  --item-width: 15px;
+  --item-height: 2px;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  /* The image used */
+  background-image: url("seamless.jpg");
+  
+  /* Add the blur effect */
+  /*filter: blur(8px);
+  -webkit-filter: blur(8px);*/
+  
+  /* Full height */
+  height: 100%; 
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+/*  background-size: cover;*/
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+/*  background-color: rgb(0,0,0); /* Fallback color */*/
+/*  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */*/
+  color: white;
+  font-weight: bold;
+/*  border: 3px solid #f1f1f1;*/
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+
+
+
+.container {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  padding: 0;
+  border-radius: 50%;
+  transform: rotate(210deg);
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.container > * {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: var(--item-width);
+  height: var(--item-height);
+}
+.container > *:nth-of-type(1) {
+  -webkit-animation: background 1s ease 0.025s infinite;
+          animation: background 1s ease 0.025s infinite;
+  transform: rotate(0deg) translate(30px) rotate(9deg) rotate(0deg);
+}
+.container > *:nth-of-type(2) {
+  -webkit-animation: background 1s ease 0.05s infinite;
+          animation: background 1s ease 0.05s infinite;
+  transform: rotate(9deg) translate(30px) rotate(18deg) rotate(-9deg);
+}
+.container > *:nth-of-type(3) {
+  -webkit-animation: background 1s ease 0.075s infinite;
+          animation: background 1s ease 0.075s infinite;
+  transform: rotate(18deg) translate(30px) rotate(27deg) rotate(-18deg);
+}
+.container > *:nth-of-type(4) {
+  -webkit-animation: background 1s ease 0.1s infinite;
+          animation: background 1s ease 0.1s infinite;
+  transform: rotate(27deg) translate(30px) rotate(36deg) rotate(-27deg);
+}
+.container > *:nth-of-type(5) {
+  -webkit-animation: background 1s ease 0.125s infinite;
+          animation: background 1s ease 0.125s infinite;
+  transform: rotate(36deg) translate(30px) rotate(45deg) rotate(-36deg);
+}
+.container > *:nth-of-type(6) {
+  -webkit-animation: background 1s ease 0.15s infinite;
+          animation: background 1s ease 0.15s infinite;
+  transform: rotate(45deg) translate(30px) rotate(54deg) rotate(-45deg);
+}
+.container > *:nth-of-type(7) {
+  -webkit-animation: background 1s ease 0.175s infinite;
+          animation: background 1s ease 0.175s infinite;
+  transform: rotate(54deg) translate(30px) rotate(63deg) rotate(-54deg);
+}
+.container > *:nth-of-type(8) {
+  -webkit-animation: background 1s ease 0.2s infinite;
+          animation: background 1s ease 0.2s infinite;
+  transform: rotate(63deg) translate(30px) rotate(72deg) rotate(-63deg);
+}
+.container > *:nth-of-type(9) {
+  -webkit-animation: background 1s ease 0.225s infinite;
+          animation: background 1s ease 0.225s infinite;
+  transform: rotate(72deg) translate(30px) rotate(81deg) rotate(-72deg);
+}
+.container > *:nth-of-type(10) {
+  -webkit-animation: background 1s ease 0.25s infinite;
+          animation: background 1s ease 0.25s infinite;
+  transform: rotate(81deg) translate(30px) rotate(90deg) rotate(-81deg);
+}
+.container > *:nth-of-type(11) {
+  -webkit-animation: background 1s ease 0.275s infinite;
+          animation: background 1s ease 0.275s infinite;
+  transform: rotate(90deg) translate(30px) rotate(99deg) rotate(-90deg);
+}
+.container > *:nth-of-type(12) {
+  -webkit-animation: background 1s ease 0.3s infinite;
+          animation: background 1s ease 0.3s infinite;
+  transform: rotate(99deg) translate(30px) rotate(108deg) rotate(-99deg);
+}
+.container > *:nth-of-type(13) {
+  -webkit-animation: background 1s ease 0.325s infinite;
+          animation: background 1s ease 0.325s infinite;
+  transform: rotate(108deg) translate(30px) rotate(117deg) rotate(-108deg);
+}
+.container > *:nth-of-type(14) {
+  -webkit-animation: background 1s ease 0.35s infinite;
+          animation: background 1s ease 0.35s infinite;
+  transform: rotate(117deg) translate(30px) rotate(126deg) rotate(-117deg);
+}
+.container > *:nth-of-type(15) {
+  -webkit-animation: background 1s ease 0.375s infinite;
+          animation: background 1s ease 0.375s infinite;
+  transform: rotate(126deg) translate(30px) rotate(135deg) rotate(-126deg);
+}
+.container > *:nth-of-type(16) {
+  -webkit-animation: background 1s ease 0.4s infinite;
+          animation: background 1s ease 0.4s infinite;
+  transform: rotate(135deg) translate(30px) rotate(144deg) rotate(-135deg);
+}
+.container > *:nth-of-type(17) {
+  -webkit-animation: background 1s ease 0.425s infinite;
+          animation: background 1s ease 0.425s infinite;
+  transform: rotate(144deg) translate(30px) rotate(153deg) rotate(-144deg);
+}
+.container > *:nth-of-type(18) {
+  -webkit-animation: background 1s ease 0.45s infinite;
+          animation: background 1s ease 0.45s infinite;
+  transform: rotate(153deg) translate(30px) rotate(162deg) rotate(-153deg);
+}
+.container > *:nth-of-type(19) {
+  -webkit-animation: background 1s ease 0.475s infinite;
+          animation: background 1s ease 0.475s infinite;
+  transform: rotate(162deg) translate(30px) rotate(171deg) rotate(-162deg);
+}
+.container > *:nth-of-type(20) {
+  -webkit-animation: background 1s ease 0.5s infinite;
+          animation: background 1s ease 0.5s infinite;
+  transform: rotate(171deg) translate(30px) rotate(180deg) rotate(-171deg);
+}
+.container > *:nth-of-type(21) {
+  -webkit-animation: background 1s ease 0.525s infinite;
+          animation: background 1s ease 0.525s infinite;
+  transform: rotate(180deg) translate(30px) rotate(189deg) rotate(-180deg);
+}
+.container > *:nth-of-type(22) {
+  -webkit-animation: background 1s ease 0.55s infinite;
+          animation: background 1s ease 0.55s infinite;
+  transform: rotate(189deg) translate(30px) rotate(198deg) rotate(-189deg);
+}
+.container > *:nth-of-type(23) {
+  -webkit-animation: background 1s ease 0.575s infinite;
+          animation: background 1s ease 0.575s infinite;
+  transform: rotate(198deg) translate(30px) rotate(207deg) rotate(-198deg);
+}
+.container > *:nth-of-type(24) {
+  -webkit-animation: background 1s ease 0.6s infinite;
+          animation: background 1s ease 0.6s infinite;
+  transform: rotate(207deg) translate(30px) rotate(216deg) rotate(-207deg);
+}
+.container > *:nth-of-type(25) {
+  -webkit-animation: background 1s ease 0.625s infinite;
+          animation: background 1s ease 0.625s infinite;
+  transform: rotate(216deg) translate(30px) rotate(225deg) rotate(-216deg);
+}
+.container > *:nth-of-type(26) {
+  -webkit-animation: background 1s ease 0.65s infinite;
+          animation: background 1s ease 0.65s infinite;
+  transform: rotate(225deg) translate(30px) rotate(234deg) rotate(-225deg);
+}
+.container > *:nth-of-type(27) {
+  -webkit-animation: background 1s ease 0.675s infinite;
+          animation: background 1s ease 0.675s infinite;
+  transform: rotate(234deg) translate(30px) rotate(243deg) rotate(-234deg);
+}
+.container > *:nth-of-type(28) {
+  -webkit-animation: background 1s ease 0.7s infinite;
+          animation: background 1s ease 0.7s infinite;
+  transform: rotate(243deg) translate(30px) rotate(252deg) rotate(-243deg);
+}
+.container > *:nth-of-type(29) {
+  -webkit-animation: background 1s ease 0.725s infinite;
+          animation: background 1s ease 0.725s infinite;
+  transform: rotate(252deg) translate(30px) rotate(261deg) rotate(-252deg);
+}
+.container > *:nth-of-type(30) {
+  -webkit-animation: background 1s ease 0.75s infinite;
+          animation: background 1s ease 0.75s infinite;
+  transform: rotate(261deg) translate(30px) rotate(270deg) rotate(-261deg);
+}
+.container > *:nth-of-type(31) {
+  -webkit-animation: background 1s ease 0.775s infinite;
+          animation: background 1s ease 0.775s infinite;
+  transform: rotate(270deg) translate(30px) rotate(279deg) rotate(-270deg);
+}
+.container > *:nth-of-type(32) {
+  -webkit-animation: background 1s ease 0.8s infinite;
+          animation: background 1s ease 0.8s infinite;
+  transform: rotate(279deg) translate(30px) rotate(288deg) rotate(-279deg);
+}
+.container > *:nth-of-type(33) {
+  -webkit-animation: background 1s ease 0.825s infinite;
+          animation: background 1s ease 0.825s infinite;
+  transform: rotate(288deg) translate(30px) rotate(297deg) rotate(-288deg);
+}
+.container > *:nth-of-type(34) {
+  -webkit-animation: background 1s ease 0.85s infinite;
+          animation: background 1s ease 0.85s infinite;
+  transform: rotate(297deg) translate(30px) rotate(306deg) rotate(-297deg);
+}
+.container > *:nth-of-type(35) {
+  -webkit-animation: background 1s ease 0.875s infinite;
+          animation: background 1s ease 0.875s infinite;
+  transform: rotate(306deg) translate(30px) rotate(315deg) rotate(-306deg);
+}
+.container > *:nth-of-type(36) {
+  -webkit-animation: background 1s ease 0.9s infinite;
+          animation: background 1s ease 0.9s infinite;
+  transform: rotate(315deg) translate(30px) rotate(324deg) rotate(-315deg);
+}
+.container > *:nth-of-type(37) {
+  -webkit-animation: background 1s ease 0.925s infinite;
+          animation: background 1s ease 0.925s infinite;
+  transform: rotate(324deg) translate(30px) rotate(333deg) rotate(-324deg);
+}
+.container > *:nth-of-type(38) {
+  -webkit-animation: background 1s ease 0.95s infinite;
+          animation: background 1s ease 0.95s infinite;
+  transform: rotate(333deg) translate(30px) rotate(342deg) rotate(-333deg);
+}
+.container > *:nth-of-type(39) {
+  -webkit-animation: background 1s ease 0.975s infinite;
+          animation: background 1s ease 0.975s infinite;
+  transform: rotate(342deg) translate(30px) rotate(351deg) rotate(-342deg);
+}
+.container > *:nth-of-type(40) {
+  -webkit-animation: background 1s ease 1s infinite;
+          animation: background 1s ease 1s infinite;
+  transform: rotate(351deg) translate(30px) rotate(360deg) rotate(-351deg);
+}
+.container > div {
+  transform-origin: top center;
+  background: transparent;
+}
+
+@-webkit-keyframes background {
+  from {
+    background: var(--color);
+  }
+  to {
+    background: transparent;
+  }
+}
+
+@keyframes background {
+  from {
+    background: var(--color);
+  }
+  to {
+    background: transparent;
+  }
+}
+
+
+@media (orientation: portrait) {
+
+  .bg-image {
+  /* The image used */
+  
+  
+  /* Add the blur effect */
+  /*filter: blur(8px);
+  -webkit-filter: blur(8px);*/
+  
+  /* Full height */
+  background-size: 100% auto; 
+  
+  /* Center and scale the image nicely */
+ 
+/*  background-size: cover;*/
+/*scale: 0.5;*/
+}
+
+.bg-text {
+
+  top: 65%;
+  
+  
+}
+
+
+
+}

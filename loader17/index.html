@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>#waitforit</title>
+	<link rel="stylesheet" type="text/css" href="./styles.css">
+	<link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+<link rel="manifest" href="./site.webmanifest">
+
+</head>
+<body>
+
+<div class="bg-image"></div>
+
+<div class="bg-text">
+  <!-- <h2>Blurred Background</h2>
+  <h1 style="font-size:50px">I am John Doe</h1>
+  <p>And I'm a Photographer</p> -->
+  <div class="container">
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div> 
+
+</div>
+
+</div>
+ <script src='//cdnjs.cloudflare.com/ajax/libs/dat-gui/0.6.5/dat.gui.min.js'></script>
+ <script type="text/javascript">
+ 	  const links = [];
+links[0]= "../loader2/index.html";
+links[1]= "../loader3/index.html";
+links[2]= "../loader4/index.html";
+links[3]= "../loader5/index.html";
+links[4]= "../loader1/index.html";
+links[5]= "../loader6/index.html";
+links[6]= "../loader7/index.html";
+links[7]= "../loader8/index.html";
+links[8]= "../loader9/index.html";
+links[9]= "../loader10/index.html";
+links[10]= "../loader11/index.html";
+links[11]= "../loader12/index.html";
+links[12]= "../loader13/index.html";
+links[13]= "../loader14/index.html";
+links[14]= "../loader15/index.html";
+links[15]= "../loader16/index.html";
+links[16]= "../loader18/index.html";
+links[17]= "../loader19/index.html";
+links[18]= "../loader20/index.html";
+
+let menu = document.querySelector('.container');
+
+function loadNew() {
+
+let random_url = Math.floor(Math.random() * 19); 
+
+ //console.log(random_url);
+  location.href = links[random_url];
+}
+
+menu.addEventListener("click", () => {
+  
+loadNew();
+  
+})
+
+ setTimeout(function(){
+     loadNew();
+ }, 15000);
+
+
+ </script>
+ <!-- <script  src="./script.js"></script> -->
+</body>
+</html>

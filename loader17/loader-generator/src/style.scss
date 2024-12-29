@@ -1,0 +1,71 @@
+/// Mixin to place items on a circle by Hugo Giraudel & Ana Tudor & Elior Tabeka
+/// https://css-tricks.com/snippets/sass/placing-items-circle/
+@mixin on-circle($item-count, $circle-size, $item-width, $item-height) {
+  position: relative;
+  width:  $circle-size;
+  height: $circle-size;
+  padding: 0;
+  border-radius: 50%;
+	transform: rotate(210deg);
+	padding: 20px;
+	
+  > * {
+    display: block;
+    position: absolute;
+    top:  50%; 
+    left: 50%;
+    width:  $item-width;
+    height: $item-height;
+  
+    $angle: (360 / $item-count);
+    $rot: 0;
+
+    @for $i from 1 through $item-count {
+      &:nth-of-type(#{$i}) {
+				animation: background 1s ease $i / $item-count + s infinite;
+				transform: 
+					rotate($rot * 1deg) 
+					translate($circle-size / 2) 
+					rotate($i * $angle + deg)
+					rotate($rot * -1deg);						
+      }
+      $rot: $rot + $angle;
+    }
+  }
+}
+
+:root {
+	--rotate: 0deg;
+	--color: #000000;
+	--item-width: 10px;
+	--item-height: 1px;
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	@include on-circle($item-count: 40, $circle-size: 60px, $item-width: var(--item-width), $item-height: var(--item-height)); 
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	
+	> div {
+		transform-origin: top center;
+		background: transparent;
+	}
+}
+
+@keyframes background {
+	from {
+		background: var(--color)
+	}
+	to {
+		background: transparent;
+	}
+}
