@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>#waitforit</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
+<link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+<link rel="manifest" href="./site.webmanifest">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="top-bar">
+    <button class="top-bar__nav-toggle hamburger" id="top-nav-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <a href="#" class="top-bar__brand"><img id="logo" src="./wait.png"></a>
+
+    <div class="top-bar__contact">
+      <a href="#">
+        
+        <!-- <i class="fa fa-envelope" aria-hidden="true"></i> -->
+       
+        <i class="fa fa-search" aria-hidden="true" id="bell"></i>
+
+
+
+      </a>
+      <a href="#">
+         <i class="fa fa-shopping-cart" aria-hidden="true" id="bell2"></i>
+      </a>
+    </div>
+    <div class="top-bar__social">
+    <!--   <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+      <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a> -->
+    </div>
+    <nav class="top-bar__nav collapsed" id="top-bar__nav">
+      <ul class="top-bar__nav-list ">
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+  <section class="root">
+  <figure>
+    <img src="./764917.jpg" alt="">
+    <figcaption>
+      <h4>Tracking Details</h4>
+      <h6>Order Number</h6>
+      <h2># A61452B</h2>
+    </figcaption>
+  </figure>
+  <div class="order-track">
+    <div class="order-track-step">
+      <div class="order-track-status">
+        <span class="order-track-status-dot" id="order1"></span>
+        <span class="order-track-status-line"></span>
+      </div>
+      <div class="order-track-text">
+        <p class="order-track-text-stat black">Ordered</p>
+        <span class="order-track-text-sub black"></span>
+      </div>
+    </div>
+    <div class="order-track-step">
+      <div class="order-track-status">
+        <span class="order-track-status-dot" id="order2"></span>
+        <!-- <span class="order-track-status-line"></span> -->
+      </div>
+      <div class="order-track-text">
+        <p class="order-track-text-stat black"> Shipped -
+Seattle, WA </p>
+        <span class="order-track-text-sub black"></span>
+      </div>
+    </div>
+    <div class="order-track-step">
+      <div class="order-track-status">
+        <span class="order-track-status-dot" id="order3"></span>
+         <span class="order-track-status-line"></span> 
+      </div>
+      <div class="order-track-text">
+        <p class="order-track-text-stat black"> Out for Delivery - 
+New York City, NY</p>
+        <span class="order-track-text-sub black">End of Day</span>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
