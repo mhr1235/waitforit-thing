@@ -1,0 +1,185 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stage {
+  position: relative;
+  background: #000000;
+  background-image: url("background_1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.bouncer-holder {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+}
+
+.bouncer-holder {
+-webkit-animation: travel 3s ease-in infinite alternate;
+    -o-animation:  travel 3s ease-in infinite alternate;
+    animation:  travel 3s ease-in infinite alternate;
+
+}
+
+/*.bouncer {
+  position: absolute;
+  bottom: 0;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  background: #E3287D;
+  background: -webkit-radial-gradient(60% 40%, circle, rgba(255,255,255,0.8), #E3287D 50%) #E3287D;
+  background: -moz-radial-gradient(60% 40%, circle, rgba(255,255,255,0.8), #E3287D 50%) #E3287D;
+  background: -o-radial-gradient(60% 40%, circle, rgba(255,255,255,0.8), #E3287D 50%) #E3287D;
+  background: -ms-radial-gradient(60% 40%, circle, rgba(255,255,255,0.8), #E3287D 50%) #E3287D;
+  background: radial-gradient(60% 40%, circle, rgba(255,255,255,0.8), #E3287D 50%) #E3287D;
+-webkit-animation: bounce 3.5s infinite;
+    -o-animation:  bounce 3.5s infinite;
+    animation:  bounce 3.5s infinite;
+}*/
+
+.bouncer {
+  position: absolute;
+  
+  bottom: 0;
+  
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+/*  animation: animate 1s linear infinite;*/
+-webkit-animation: bounce 3.5s infinite;
+    -o-animation:  bounce 3.5s infinite;
+    animation:  bounce 3.5s infinite;
+     
+}
+.bouncer span{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #f00;
+  left: 50%;
+  border-radius: 50%;
+  transform-origin: left;
+
+
+}
+.bouncer span:nth-child(1){
+  background: #0fa503;
+  transform: rotate(0deg);
+  z-index: 2;
+}
+.bouncer span:nth-child(2){
+  background: #ffd203;
+  transform: rotate(60deg);
+  z-index: 3;
+}
+.bouncer span:nth-child(3){
+  background: #54cd28;
+  transform: rotate(120deg);
+  z-index: 4;
+}
+.bouncer span:nth-child(4){
+  background: #129cf5;
+  transform: rotate(180deg);
+  z-index: 5;
+}
+.bouncer span:nth-child(5){
+  background: #bb5ed3;
+  transform: rotate(240deg);
+  z-index: 6;
+}
+.bouncer span:nth-child(6){
+  background: #ff4f45;
+  transform: rotate(300deg);
+  z-index: 7;
+  overflow: hidden;
+}
+
+.bouncer span:nth-child(6):before{
+  content: '';
+  position: absolute;
+  top: 45px;
+  left: -72px;
+  width: 100%;
+  height: 100%;
+  background: #ffd203;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.bouncer span:nth-child(6):after{
+  content: '';
+  position: absolute;
+  top: 42px;
+  left: -23px;
+  width: 100%;
+  height: 100%;
+  background: #fea503;
+  border-radius: 50%;
+}
+
+ @-webkit-keyframes travel {
+   from { left: 0; }
+     to   { left: calc(100% - 100px)}
+  }
+  
+  @keyframes travel {
+     from { left: 0; }
+     to   { left: calc(100% - 100px)}
+  }
+  
+  @-webkit-keyframes bounce {
+    from, to  {
+      bottom: 0;
+      -webkit-animation-timing-function: ease-out;
+    }
+    50% {
+      bottom: 220px;
+      -webkit-animation-timing-function: ease-in;
+    }
+  }
+  @keyframes bounce {
+    from, to  {
+      bottom: 0;
+      transform: rotate(750deg);
+      animation-timing-function: ease-out;
+    }
+    50% {
+      bottom: calc(100% - 100px);
+      transform: rotate(0deg);
+      animation-timing-function: ease-in;
+    }
+    
+  }
+
+  @keyframes animate{
+  0% {
+  transform: rotate(359deg);
+
+  }
+  100% {
+    transform: rotate(0deg);
+    }
+
+}
+
+/*  @media only screen and (orientation: portrait) {
+  .stage {
+  position: relative;
+  background: #000000;
+  width: 80%;
+  height: 80%;
+}
+}*/

@@ -1,0 +1,321 @@
+html {
+	box-sizing: border-box;
+	font-size: 10px;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body {
+	font-family: sans-serif;
+	margin: 0;
+	font-size: 1.5rem;
+/*	background-image: -webkit-linear-gradient(190deg, #f4bcbe 0%, #c5eaf7 100%);
+	background-image: linear-gradient(260deg, #f4bcbe 0%, #c5eaf7 100%);*/
+	background: white;
+
+}
+
+.loading {
+
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border: 0.35rem solid #00afef;
+  border-top-color: #008ccf;
+  animation: spin 1s infinite linear;
+  margin-left: 50%;
+  margin-top: 20%;
+  position: absolute;
+  z-index: 24;
+  
+
+}
+
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+#logo{
+
+	width: 40%;
+	height: auto;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+a.button {
+/*	background: rgba(0, 0, 0, 0.1);*/
+	background: rgba(0,175,239,0.8);
+	padding: 1rem 1.5rem;
+	border-radius: 4px;
+}
+
+a.button:hover {
+	background: white;
+	padding: 1rem 1.5rem;
+	border-radius: 4px;
+	color:  rgba(0,0,0,0.7);
+}
+
+.app-wrap {
+	max-width: 540px;
+	height: 90vh;
+	margin: 2vh auto 2vh auto;
+/*	border: 2px solid rgba(0,175,239,0.8);*/
+	border-bottom-width: 0px;
+	border-radius: 10px;
+	box-shadow: 0 0 50px rgba(0,0,0,0.3);
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+
+
+}
+
+.app-wrap > * {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1 1 auto;
+	    -ms-flex: 1 1 auto;
+	        flex: 1 1 auto;
+
+}
+
+.content {
+	padding: 20px;
+	background: white;
+	box-shadow: 0 0 5px 0 rgba(0,0,0,0.1);
+	line-height: 1.6;
+	overflow-y: scroll;
+	-webkit-overflow-scrolling:touch;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	overflow-x: hidden;
+
+}
+
+.content > * {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1 1;
+	    -ms-flex: 1 1;
+	        flex: 1 1;
+	max-width: 100%;
+	margin-left: 10%;
+
+	
+}
+
+.straightup {
+	height: auto;
+	
+	width: 80%;
+	filter: blur(8px);
+  -webkit-filter: blur(8px);
+
+	
+
+}
+
+#text{
+    margin-left: -1%;
+}
+
+
+
+
+.icon-bar a {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
+	text-align: center;
+	padding: 1.5rem;
+/*	border-left: 1px solid rgba(0,0,0,0.1);*/
+
+	color: rgba(0,175,239,1);
+
+
+
+
+}
+
+.icon-bar a:hover {
+	background: rgba(0,175,239,1);
+
+	color: white;
+}
+
+
+.icon-bar a:first-child {
+	
+	
+	
+}
+
+.icon-bar a:last-child {
+	
+	
+}
+
+.app-header {
+/*	background: rgba(0,0,0,0.7);*/
+	background: white;
+
+	color: #f4bcbe;
+	padding: 1rem;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	text-align: center;
+	border-bottom: 1px solid lightgrey;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+
+}
+
+.icon-bar {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-basis: 70px;
+	    -ms-flex-preferred-size: 70px;
+	        flex-basis: 70px;
+	min-height: 50px;
+	border-top: 1px solid lightgrey;
+}
+
+ @media (orientation: portrait) {
+
+
+ 	.loading {
+
+ 
+  width: 50px;
+  height: 50px;
+border: 0.65rem solid #00afef;
+  border-top-color: #008ccf;
+  margin-top: 70%;
+  margin-left: 45%;
+  position: absolute;
+  z-index: 24;
+  
+
+}
+        body {
+          margin: 1%;
+          font-size: 3.0rem;
+        }
+
+        .app-wrap {
+	max-width: 95%;
+	height: 90vh;
+	margin: 2vh auto 2vh auto;
+/*	border: 2px solid rgba(0,175,239,0.8);*/
+	border-bottom-width: 0px;
+	border-radius: 10px;
+	box-shadow: 0 0 50px rgba(0,0,0,0.3);
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+
+      }
+
+      .app-header {
+/*	background: rgba(0,0,0,0.7);*/
+	background: white;
+	border-bottom: 1px solid lightgrey;
+	height: 0%;
+	margin-left: 1%;
+	border-top-right-radius: 10px;
+
+}
+
+a.button {
+
+  margin-right: 1%;
+}
+
+
+
+#logo{
+
+	height: 65%;
+	width: auto;
+}
+.content > * {
+	
+	
+	max-width: 110%;
+	margin-left: 0;
+}
+
+.straightup {
+	width: 101%;
+
+	filter: blur(6px);
+  -webkit-filter: blur(6px);
+
+	
+
+}
+
+#text{
+
+	display: none;
+}
+
+.icon-bar a {
+	
+	font-size: 1.5rem;
+
+
+
+
+}
+
+
+
+
+
+}
+
